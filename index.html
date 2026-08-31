@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator - By - Chandan Mahanta</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="password-box">
+
+            <h1>🔐 Password Generator</h1>
+            <p class="subtitle">Create a strong and secure random password</p>
+
+            <!-- Password Display -->
+            <div class="password-display">
+                <input type="text" id="password" placeholder="Your password" readonly>
+                <button id="copyBtn" title="Copy Password">📋</button>
+            </div>
+
+            <!-- Password Length -->
+            <div class="option">
+                <div class="option-header">
+                    <label for="length">Password Length</label>
+                    <span id="lengthValue">12</span>
+                </div>
+
+                <input
+                    type="range"
+                    id="length"
+                    min="4"
+                    max="50"
+                    value="12"
+                >
+            </div>
+
+            <!-- Options -->
+            <div class="options">
+
+                <label class="checkbox">
+                    <input type="checkbox" id="uppercase" checked>
+                    <span>Include Uppercase Letters</span>
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="lowercase" checked>
+                    <span>Include Lowercase Letters</span>
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="numbers" checked>
+                    <span>Include Numbers</span>
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="symbols" checked>
+                    <span>Include Symbols</span>
+                </label>
+
+            </div>
+
+            <!-- Strength -->
+            <div class="strength">
+                <div class="strength-info">
+                    <span>Password Strength</span>
+                    <span id="strengthText">Strong</span>
+                </div>
+
+                <div class="strength-bar">
+                    <div id="strengthIndicator"></div>
+                </div>
+            </div>
+
+            <!-- Generate Button -->
+            <button id="generateBtn" class="generate-btn">
+                Generate Password
+            </button>
+
+            <p id="message" class="message"></p>
+
+        </div>
+    
+
+         <!-- Right Side Profile Card -->
+        <div class="profile-box">
+
+           <div class="profile-icon">
+               <img src="image/home-img2.png">
+           </div>
+
+           <h2>Chandan Mahanta</h2>
+
+           <p class="role">
+              Software Developer
+           </p>
+
+           <p class="about">
+              Passionate developer interested in building modern
+              web applications and solving problems with code.
+           </p>
+
+           <div class="details">
+
+              <div class="detail-item">
+                  <span>🎓</span>
+                  <div>
+                      <strong>Education</strong>
+                      <p>B.Tech / Computer Science</p>
+                  </div>
+               </div>
+
+              <div class="detail-item">
+                  <span>💻</span>
+                  <div>
+                      <strong>TechStack</strong>
+                      <p>HTML • CSS • JavaScript</p>
+                  </div>
+               </div>
+
+               <div class="detail-item">
+                  <span>📍</span>
+                  <div>
+                      <strong>Location</strong>
+                      <p>India</p>
+                  </div>
+               </div>
+
+            </div>
+
+            <div class="social-links">
+
+              <a href="https://github.com/CMCodeHUB" target="_blank">
+                 GitHub
+              </a>
+ 
+               <a href="#" target="_blank">
+                  LinkedIn
+               </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
